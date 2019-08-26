@@ -1,0 +1,30 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: mango-server
+  labels:
+    app: mango-server
+    tier: mango-server
+spec:
+  revisionHistoryLimit: 2
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mango-server
+        tier: mango-server
+    spec:
+      containers:
+        - name: mango-server
+          image: source-ops/mango-server:latest
+          resources:
+            requests:
+              cpu: 50m
+              memory: 100Mi
+            limits:
+              cpu: 100m
+              memory: 150Mi
+          ports:
+            - containerPort: 8080
+              name: http-mango-server
+              protocol: TCP

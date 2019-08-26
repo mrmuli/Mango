@@ -1,0 +1,30 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: mango-client
+  labels:
+    app: mango-client
+    tier: mango-client
+spec:
+  revisionHistoryLimit: 2
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mango-client
+        tier: mango-client
+    spec:
+      containers:
+        - name: mango-client
+          image: source-ops/mango-client:latest
+          resources:
+            requests:
+              cpu: 50m
+              memory: 100Mi
+            limits:
+              cpu: 100m
+              memory: 150Mi
+          ports:
+            - containerPort: 3000
+              name: http-mango-client
+              protocol: TCP
