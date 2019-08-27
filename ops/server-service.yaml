@@ -7,8 +7,8 @@ spec:
   type: NodePort
   ports:
     - name: http-mango-server
-      port: 8080
-      targetPort: 8080
+      port: 5000
+      targetPort: 5000
   selector:
     app: mango-server
     tier: mango-server

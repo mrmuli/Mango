@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: mango-server
-          image: source-ops/mango-server:latest
+          image: josephmuli/simple-express:0.1
           resources:
             requests:
               cpu: 50m
@@ -25,6 +25,6 @@ spec:
               cpu: 100m
               memory: 150Mi
           ports:
-            - containerPort: 8080
+            - containerPort: 5000
               name: http-mango-server
               protocol: TCP
