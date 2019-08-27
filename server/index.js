@@ -8,9 +8,9 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 // An api endpoint that returns a short list of Mangoes
 app.get('/api/getList', (req,res) => {
-    var list = ["item1", "item2", "item3"];
+    var list = ["Green Mango", "Red Mango", "Yellow Mango"];
     res.json(list);
-    console.log('Sent list of items');
+    console.log('Sent list of Mangoes');
 });
 
 // Handles any requests that don't match the ones above
