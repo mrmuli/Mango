@@ -8,7 +8,7 @@ spec:
   ports:
     - name: http-mango-server
       port: 5000
-      targetPort: 5000
+      targetPort: http-mn-server
   selector:
     app: mango-server
     tier: mango-server

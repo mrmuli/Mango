@@ -26,5 +26,5 @@ spec:
               memory: 150Mi
           ports:
             - containerPort: 5000
-              name: http-mango-server
+              name: http-mn-server
               protocol: TCP
