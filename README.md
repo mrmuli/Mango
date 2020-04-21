@@ -1,7 +1,5 @@
 # The Mangoes API
 
-[![buddy pipeline](https://app.buddy.works/jayjaymuli00/mango-1/pipelines/pipeline/206808/badge.svg?token=c78984ac5408c98cad82dbdad8eca2a7de87d754ef2491ec2aa587373338d772 "buddy pipeline")](https://app.buddy.works/jayjaymuli00/mango-1/pipelines/pipeline/206808)
-
 This repository seeks to demonstrate a simple CD pipeline for an express server.
 
 This is entirely for demonstration purposes.
