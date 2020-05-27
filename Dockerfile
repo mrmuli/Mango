@@ -1,4 +1,4 @@
-FROM node:11-alpine
+FROM node:alpine3.10
 
 RUN mkdir -p /usr/src/app
 
@@ -7,6 +7,7 @@ WORKDIR /usr/src/app
 COPY . .
 
 RUN npm install
+
 
 EXPOSE 3000
 
