@@ -8,7 +8,8 @@ COPY . .
 
 RUN npm install
 
-# RUN npm audit fix
+# build and run audit
+RUN npm audit fix
 
 EXPOSE 3000
 
